@@ -1,19 +1,28 @@
 # Teaching Administration Assistant
 
 #### 介绍
+这是一个辅助广东科技学院教务管理系统的插件。教务系统入口： http://61.142.33.204/
+
+
+
+
 {**以下是码云平台说明，您可以替换此简介**
 码云是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
 无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
 
 #### 软件架构
-软件架构说明
-
+``` 
+|-manifest.json //插件配置文件，包括资源引用、权限申请等基础信息
+|-ico   //插件Logo
+|-js    //js存放目录
+|-html  //插件相关的HTML文件
+|-Readme.md //插件说明手册
+```
+其它详情：[http://open.chrome.360.cn/extension_dev/overview.html](http://open.chrome.360.cn/extension_dev/overview.html)
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  chrome 内核的Web浏览器，以启用“开发者模式”--"加载已解压的拓展程序"。
 
 #### 使用说明
 
