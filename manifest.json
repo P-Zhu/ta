@@ -1,0 +1,32 @@
+{
+    "update_url": "https://le.com/service/update2/",
+
+    "manifest_version": 2,
+    "name": "成绩导入",
+    "version": "0.9",
+    "icons": {
+        "16": "ico/ico.png",
+        "48": "ico/ico.png",
+        "128": "ico/ico.png"
+    },
+    "description": "这是一个辅助广东科技学院教务管理系统自己导入学生成绩的插件。\n\r\n\r\n\r\n\r\n\r_author_Rieeqboy",
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "offline_enabled": true,
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "activeTab",
+        "http://61.142.33.204/*"
+    ],
+    "options_page": "html/options.html",
+    "browser_action": {
+        "default_title": "广科教务成绩录入助手",
+        "default_icon": "ico/ico.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://61.142.33.204/*"],
+        "js": ["js/inject.js"]
+    }]
+}
