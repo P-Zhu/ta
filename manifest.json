@@ -1,9 +1,9 @@
 {
     "update_url": "https://le.com/service/update2/",
-
+    "appid": "lcoehhjllmgggacndfpefpaomaajghoj,"
     "manifest_version": 2,
     "name": "成绩导入",
-    "version": "0.9",
+    "version": "1.0",
     "icons": {
         "16": "ico/ico.png",
         "48": "ico/ico.png",
