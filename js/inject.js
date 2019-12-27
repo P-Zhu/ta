@@ -1,9 +1,11 @@
 function set_score(cjtype, n, v) {
     var table = document.getElementById('DataGrid1').querySelectorAll('tr');
     for (i = 1; i < table.length; i++) {
-        console.log(table[i].cells[1].innerText == n);
-        if (table[i].cells[1].innerText == n) {
-            table[i].cells[cjtype].querySelectorAll('input')[0].value = v;
+        // console.log(table[i].cells[1].innerText == n);
+        // console.log(v);
+        if (table[i].cells[1].innerText == n.trim()) {
+            // console.log("##" + v + "##" + v.trim() + "#");
+            table[i].cells[cjtype].querySelectorAll('input')[0].value = v.trim();
         }
     }
 }
