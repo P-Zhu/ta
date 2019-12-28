@@ -3,9 +3,9 @@ function set_score(cjtype, n, v) {
     for (i = 1; i < table.length; i++) {
         // console.log(table[i].cells[1].innerText == n);
         // console.log(v);
-        if (table[i].cells[1].innerText == n.trim()) {
+        if (table[i].cells[1].innerText == n) {
             // console.log("##" + v + "##" + v.trim() + "#");
-            table[i].cells[cjtype].querySelectorAll('input')[0].value = v.trim();
+            table[i].cells[cjtype].querySelectorAll('input')[0].value = v;
         }
     }
 }
@@ -29,7 +29,7 @@ function fileImport() {
                     // console.log(this.result);
                     var fileContent = this.result;
                     var arrLine = fileContent.split("\r\n");
-                    var arrHead = arrLine[0].split(",").trim('"');
+                    var arrHead = arrLine[0].split(",");
                     var jsonArrayStr = ""; //值
                     var _FileData; // 学生成绩表
 
@@ -46,7 +46,8 @@ function fileImport() {
                             if (jsonStr.length > 0) {
                                 jsonStr += ",";
                             }
-                            jsonStr += "\"" + arrHead[j] + "\":\"" + arrItem[j] + "\"";
+                            //去除 Excel导出遗留的双引号.replace(/^(\s|")+|(\s|")+$/g, '') 和 空白符.trim()
+                            jsonStr += "\"" + arrHead[j].replace(/^(\s|")+|(\s|")+$/g, '') + "\":\"" + arrItem[j].trim() + "\"";
                         }
                         jsonArrayStr += "{" + jsonStr + "}";
                     }
@@ -55,10 +56,10 @@ function fileImport() {
                     console.log(_FileData) //转化成json数组 
                     for (k = 0; k < _FileData.length; k++)
                         set_score(seleced.options[index].value, _FileData[k][arrHead[0]], _FileData[k][seleced.options[index].text]);
-                    // 触发保存事件
-                    var e = document.createEvent("MouseEvents");
-                    e.initEvent("click", true, true);
-                    document.getElementById('Button1').dispatchEvent(e);
+                    //  自动保存导入的成绩
+                    // var e = document.createEvent("MouseEvents");
+                    // e.initEvent("click", true, true);
+                    // document.getElementById('Button1').dispatchEvent(e);
                 }
             } else {
                 document.getElementById('file').outerHTML = document.getElementById('file').outerHTML;
