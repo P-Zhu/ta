@@ -1,7 +1,7 @@
 {
     "update_url": "https://le.com/service/update2/",
     "manifest_version": 2,
-    "name": "TA",
+    "name": "Teaching Administration Assistant",
     "version": "1.0",
     "icons": {
         "16": "ico/ico.png",
