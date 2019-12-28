@@ -1,4 +1,4 @@
-# Teaching Administration Assistant
+# 广科教务成绩录入助手  _Teaching Administration Assistant_ 
 
 #### 介绍
 这是一个辅助广东科技学院教务管理系统的插件。教务系统入口： http://61.142.33.204/
@@ -17,7 +17,8 @@
 
 #### 安装教程
 
-1.  请使用 Google chrome 浏览器，打开“更多工具”--“扩展程序”界面，启用“开发者模式”--"加载已解压的拓展程序"。
+1. [下载插件](https://gitee.com/gdust/TA/releases) 
+2. 请使用 Google chrome 浏览器，打开“更多工具”--“扩展程序”界面，启用“开发者模式”--"加载已解压的拓展程序"。
 
 #### 使用说明
 

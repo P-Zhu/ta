@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+    background-color: #eee
+}
+
+* {
+    text-align: center;
+}
+
+input {
+    text-align: left;
+}
+
+.content {
+    background-color: #fff;
+    width: 80%;
+    margin: 10% auto;
+    text-align: left;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.context {
+    text-align: left;
+    font-family: serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 50px;
+}
+
+.author {
+    font-family: serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: right;
+    margin-right: 10%;
+}
+
+.url {
+    font-family: serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    /*    text-align: left;*/
+}
+
+img {
+    margin: auto;
+}
+
+p img {
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+
+p b {
+    background: yellow;
+    display: inline-block;
+    color: red;
+    padding: 5px 0;
+}
