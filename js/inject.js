@@ -21,7 +21,7 @@ function fileImport() {
             //读取要导入 的成绩类型
             var seleced = document.getElementById('cjtype');
             var index = seleced.selectedIndex;
-            if (confirm("确认要导入" + seleced.options[index].text + "?")) {
+            if (confirm("确认要导入   " + seleced.options[index].text + "?")) {
                 var reader = new FileReader(); //这是核心,读取操作就是由它完成.
                 reader.readAsText(selectedFile); //读取文件的内容,也可以读取文件的URL
                 reader.onload = function() {
@@ -29,7 +29,7 @@ function fileImport() {
                     // console.log(this.result);
                     var fileContent = this.result;
                     var arrLine = fileContent.split("\r\n");
-                    var arrHead = arrLine[0].split(",");
+                    var arrHead = arrLine[0].split(",").trim('"');
                     var jsonArrayStr = ""; //值
                     var _FileData; // 学生成绩表
 
