@@ -1,4 +1,4 @@
-# Teaching Administration Assistant
+# 广科教务成绩录入助手  _Teaching Administration Assistant_ 
 
 #### 介绍
 这是一个辅助广东科技学院教务管理系统的插件。教务系统入口： http://61.142.33.204/
