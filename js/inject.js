@@ -57,9 +57,9 @@ function fileImport() {
                     for (k = 0; k < _FileData.length; k++)
                         set_score(seleced.options[index].value, _FileData[k][arrHead[0]], _FileData[k][seleced.options[index].text]);
                     //  自动保存导入的成绩
-                    // var e = document.createEvent("MouseEvents");
-                    // e.initEvent("click", true, true);
-                    // document.getElementById('Button1').dispatchEvent(e);
+                    var e = document.createEvent("MouseEvents");
+                    e.initEvent("click", true, true);
+                    document.getElementById('Button1').dispatchEvent(e);
                 }
             } else {
                 document.getElementById('file').outerHTML = document.getElementById('file').outerHTML;
