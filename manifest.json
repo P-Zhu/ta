@@ -13,12 +13,16 @@
         "scripts": ["js/background.js"]
     },
     "offline_enabled": true,
+    "web_accessible_resources": ["js/ketangpai/hreview.js"],
+
     "permissions": [
         "webRequest",
         "webRequestBlocking",
         "activeTab",
-        "http://61.142.33.204/*"
+        "http://*/*",
+        "https://*/*"
     ],
+
     "options_page": "html/options.html",
     "browser_action": {
         "default_title": "广科教务成绩录入助手",
