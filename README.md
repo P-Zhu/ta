@@ -18,7 +18,7 @@
 #### 安装教程
 
 1. [下载插件](https://gitee.com/gdust/TA/releases) 
-2. <a href="https://jingyan.baidu.com/article/3065b3b6cc6cf6ffcef8a444.html" target="_blank">&gt;&gt;&gt;   安装教程</a></h3>。
+2. <a href="https://jingyan.baidu.com/article/3065b3b6cc6cf6ffcef8a444.html" target="_blank">安装教程</a></h3>。
 
 #### 使用说明
 安装成功后，单击浏览器右上角的【助手图标】，查看使用说明。
