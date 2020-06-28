@@ -21,7 +21,7 @@
 2. <a href="https://jingyan.baidu.com/article/3065b3b6cc6cf6ffcef8a444.html" target="_blank">安装教程</a></h3>
 
 #### 使用说明
-安装成功后，单击浏览器右上角的【助手图标】，查看使用说明。
+安装成功后，单击浏览器右上角的助手图标![LOGO](https://gitee.com/gdust/TA/blob/develop/ico/ico.png "ico.png")，查看使用说明。
 
 点击查看大图
 
